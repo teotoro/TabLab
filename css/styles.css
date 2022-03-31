@@ -1,0 +1,232 @@
+/* common */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --dark: #0B0D17;
+    --white: #FFFFFF;
+    --light: #D0D6F9; 
+    --basic: 'Barlow Condensed', sans-serif;
+    --heading: 'Bellefair', serif;
+}
+
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: var(--white);
+}
+
+li{
+    list-style-type: none;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+body{
+    max-width: 1680px;
+    background: url("../assets/home/background-home-desktop.jpg") no-repeat center;
+    background-size: cover;
+    color: var(--white);;    
+    margin: 0 auto;
+    font-family: var(--basic);
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 100px;
+    font-family: var(--heading);
+}
+
+h2{
+    font-size: 70px;
+}
+
+h3{
+    font-size: 55px;
+}
+
+h4{
+    font-size: 32px;
+}
+
+h5{
+    font-size: 28px;
+    letter-spacing: 5px;
+}
+
+p{
+    font-size: 16px;
+    color: var(--light);
+    letter-spacing: 2.7px;
+    line-height: 30px;
+}
+
+.active a{
+    color: var(--light);
+}
+
+
+/* homepage intro */
+
+.intro{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro_{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.intro_ h5{
+    color: var(--light);
+    letter-spacing: 4.75px;
+}
+
+.intro__{
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+    background-color: var(--white);
+    position: relative;
+    transition: all 1s;
+    outline: none;
+    color: var(--dark);
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.intro_>*{
+    padding-bottom: 20px;
+}
+
+
+.intro__:after{
+    content: " ";
+    width: 280px;
+    height: 280px;
+    top: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 50%;
+    transition:all 1s;
+    z-index: -1;
+}
+
+
+.intro__:hover:after{
+    content: " ";
+    transform: scale(1.5);
+    background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 50%;
+    z-index: -1;
+    transition:all 1s;
+}
+
+
+.intro__:hover{
+    font-size: 36px;
+    transition: all .5s;
+    outline: none;
+}
+
+/* hide homepage content */
+.content-hide{
+    display: none;
+}
+
+/* destinations page */
+
+.destinations{
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+}
+
+#planets{
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+.planet-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+}
+
+.planet-item{
+    padding: 15px;
+}
+
+.planet-item a{
+    font-size: 32px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    transition: all .5s;
+}
+
+.planet-item a:hover{
+    color: var(--light);
+    transition: all .5s;
+}
+
+.planet-item a:after{
+    content: "";
+    height: 2px;
+    background-color: var(--light);
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    transform: translate(0, 2px);
+    transition: width .2s;
+}
+
+.planet-item a:hover:after{
+    width: 100%;
+    transition: width .5s;
+}
+.destinations-content{
+    width: 100%;
+}
+
+.planet-img{
+    max-width: 40%;
+}
+
+.planet-img_{
+    width: 100%;
+}
+
+.planet-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.planet-info_{
+    width: 40%;
+}

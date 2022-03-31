@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+
+  <title>Space tourism website</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/69ec0bc506.js" crossorigin="anonymous"></script>
+
+  <link rel="myScript" href="myScript.js">
+
+</head>
+
+<body id="homepage">
+
+  <section id="homepage-intro" class="intro">
+    <div class="intro_">
+      <h5>So, you want to travel to</h5>
+      <h1>Space</h1>
+      <p>Let’s face it; if you want to go to space, you might as well genuinely go to
+        outer space and not hover kind of on the edge of it. Well sit back, and relax
+        because we’ll give you a truly out of this world experience!</p>
+    </div>
+    <button id="explore" class="intro__ ">
+      Explore
+    </button>
+  </section>
+
+  <section id="planets" class="content-hide planets-container">
+    <div class="planet-content">
+      <ul class="planet-list">
+        <li class="planet-item" id="default" onclick="openPlanet(event, 'europa')"><a href="#europa">europa</a></li>
+        <li class="planet-item" onclick="openPlanet(event, 'mars')"><a href="#mars">mars</a></li>
+        <li class="planet-item" onclick="openPlanet(event, 'moon')"><a href="#moon">moon</a></li>
+        <li class="planet-item" onclick="openPlanet(event, 'titan')"><a href="#titan">titan</a></li>
+      </ul>
+      <div class="destination-content">
+        <div id="europa" class="planet-info">
+          <div class="planet-img">
+            <img class="planet-img_" src="./assets/destination/image-europa.png" alt="europa-img">
+          </div>
+          <div class="planet-info_">
+            <h1>europa</h1>
+            <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+              winter lover’s dream. With an icy surface, it’s perfect for a bit of
+              ice skating, curling, hockey, or simple relaxation in your snug
+              wintery cabin.</p>
+
+            <div class="planet-meta">
+              <div>
+                <p>Avg. distance</p>
+                <span>628 mil. km</span>
+              </div>
+              <div>
+                <p>Est. travel time</p>
+                <span>3 years</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="mars" class="planet-info">
+          <div class="planet-img">
+            <img class="planet-img_" src="./assets/destination/image-mars.png" alt="mars-img">
+          </div>
+          <div class="planet-info_">
+            <h1>Mars</h1>
+            <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons,
+              the tallest planetary mountain in our solar system. It’s two and a half times
+              the size of Everest!</p>
+
+            <div class="planet-meta">
+              <div>
+                <p>Avg. distance</p>
+                <span>225 mil. km</span>
+              </div>
+              <div>
+                <p>Est. travel time</p>
+                <span>9 months</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="moon" class="planet-info">
+          <div class="planet-img">
+            <img class="planet-img_" src="./assets/destination/image-moon.png" alt="moon-img">
+          </div>
+          <div class="planet-info_">
+            <h1>Moon</h1>
+            <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+              regain perspective and come back refreshed. While you’re there, take in some history
+              by visiting the Luna 2 and Apollo 11 landing sites.</p>
+
+            <div class="planet-meta">
+              <div>
+                <p>Avg. distance</p>
+                <span>384,400 km</span>
+              </div>
+              <div>
+                <p>Est. travel time</p>
+                <span>3 days</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="titan" class="planet-info">
+          <div class="planet-img">
+            <img class="planet-img_" src="./assets/destination/image-titan.png" alt="titan-img">
+          </div>
+          <div class="planet-info_">
+            <h1>Titan</h1>
+            <p>The only moon known to have a dense atmosphere other than Earth, Titan
+              is a home away from home (just a few hundred degrees colder!). As a
+              bonus, you get striking views of the Rings of Saturn.</p>
+
+            <div class="planet-meta">
+              <div>
+                <p>Avg. distance</p>
+                <span>1.6 bil. km</span>
+              </div>
+              <div>
+                <p>Est. travel time</p>
+                <span>7 years</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+  <script type="text/javascript" src="myScript.js"> </script>
+
+</body>
+
+</html>
